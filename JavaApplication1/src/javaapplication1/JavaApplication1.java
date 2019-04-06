@@ -20,18 +20,19 @@ public class JavaApplication1 {
         // TODO code application logic here
        Scanner s = new Scanner(System.in);
         int n;
+        int jml = 0;
 
         System.out.print("jumlah deret Fibonacci: ");
         n = s.nextInt();
 
         for (int i = 1; i <= n; i++) {
             int x = cari(i);
-           // int tot = x + x;
-            System.out.print(x + " ");
+            jml += x;
+            
         }
-
+        System.out.print(jml);
     }
-
+    
     public static int cari(int n) {
         if (n == 1 || n == 2) {
             return 1;
